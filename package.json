@@ -1,0 +1,14 @@
+{
+  "name": "rds-lambda-stop-start",
+  "version": "1.0.0",
+  "description": "RDS Start / Stop is a Lambda Function code aims to stop/start RDS's on a scheduled basis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammet Arslan",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.61.0"
+  }
+}
