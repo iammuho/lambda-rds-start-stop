@@ -120,7 +120,7 @@ For scheduling the lambda function;
 ## Built With
 
 * [Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html) - The AWS Lambda
-* [NodeJs](https://nodejs.org/en/) - Dependency Management
+* [NodeJs](https://nodejs.org/en/)
 
 ## Contributing
 
