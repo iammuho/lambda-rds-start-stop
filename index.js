@@ -1,5 +1,5 @@
 var startInstance = require('./start');
-var stopInstance = require('stop');
+var stopInstance = require('./stop');
 
 exports.handler = (event, context, callback) => {
     event.instances.forEach((instance) => {
