@@ -6,7 +6,7 @@ exports.handler = (event, context, callback) => {
         switch(event.action) {
             case 'stop':
                 console.log(`Stopping instance '${instance}'...`);
-                stopInstance(instance);
+                stopInstance(instance, event.snapshot);
                 break;
             case 'start':
                 console.log(`Starting instance '${instance}'...`);
