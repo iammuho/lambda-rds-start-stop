@@ -21,6 +21,7 @@ First clone the script on your local and run below command to create node_module
 
 ``` 
 npm install 
+zip -r ../lambda-rds-start-stop *
 ```
 
 And then before creating a lambda function, we need to create a IAM Role. Below you can find CFN template or IAM Policy Raw for this role. 
@@ -84,7 +85,7 @@ And now we can create a lambda function.
 To test your function, on your lambda function page click actions > configure test event and put below json.
 
 ```
-{ "instances": ["rds-instance-id"], "action":"stop" }
+{ "instances": ["rds-instance-id"], "action":"stop", "snapshot": true }
 ```
 
 and after it's stopped, test with another config event;
@@ -108,7 +109,7 @@ For scheduling the lambda function;
 #### Stopping the Instances: 
 
 ```
-{ "instances": ["rds-instance-id"], "action":"stop" }
+{ "instances": ["rds-instance-id"], "action":"stop", "snapshot": false }
 ```
 
 #### Starting the Instances:
